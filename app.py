@@ -11,7 +11,7 @@ import pandas as pd
 def get_openai_answer(drug):
     # Get API key
     openai.api_key = st.secrets["api-keys"]["open_ai"]
-    fullTextSearchApi = FullTextSearchApi(api_key="488f3c72fd1b7aa1561c703878503eb9b87825bc333bda0585fed94833a917af")
+    fullTextSearchApi = FullTextSearchApi(api_key=st.secrets["api-keys"]["sec_key"])
     
     #drug molecule is the input from the user
     
